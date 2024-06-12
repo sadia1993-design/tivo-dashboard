@@ -9,9 +9,9 @@ const Layout = () => {
     <>
       <div className="flex flex-row h-screen w-screen overflow-hidden">
         <Sidebar />
-        <div className="p-4">
+        <div className="w-full flex flex-col justify-between	">
           <Header />
-          <div>{<Outlet />}</div>
+          <div className="flex-1">{<Outlet />}</div>
 
           <Footer />
         </div>
